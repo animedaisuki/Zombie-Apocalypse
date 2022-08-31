@@ -56,9 +56,9 @@ class Zombie {
         var moveDirection = {"R":{x: this.x + 1, y: this.y},
             "L":{x: this.x - 1, y: this.y},
             "D":{x: this.x, y: this.y + 1},
-            "U": {x: this.x, y: this.y - 1}}
-        this.x = moveDirection[direction]["x"] % gridSize
-        this.y = moveDirection[direction]["y"] % gridSize
+            "U": {x: this.x, y: this.y - 1}};
+        this.x = moveDirection[direction]["x"] % gridSize;
+        this.y = moveDirection[direction]["y"] % gridSize;
         console.log("zombie " + this.name + " moved to " + "(" + this.x + "," + this.y + ")");
     }
 
