@@ -53,34 +53,12 @@ class Zombie {
     }
 
     move(direction) {
-        if (direction === "R") {
-            if (this.x === this.gridSize - 1) {
-                this.x = 0;
-            } else {
-                this.x = this.x + 1;
-            }
-        }
-        if (direction === "L"){
-            if (this.x === 0) {
-                this.x = this.gridSize - 1;
-            } else {
-                this.x = this.x - 1;
-            }
-        }
-        if (direction === "D") {
-            if (this.y === this.gridSize - 1) {
-                this.y = 0;
-            } else {
-                this.y = this.y + 1;
-            }
-        }
-        if (direction === "U") {
-            if (this.y === 0) {
-                this.y = this.gridSize - 1;
-            } else {
-                this.y = this.y - 1;
-            }
-        }
+        var moveDirection = {"R":{x: this.x + 1, y: this.y},
+            "L":{x: this.x - 1, y: this.y},
+            "D":{x: this.x, y: this.y + 1},
+            "U": {x: this.x, y: this.y - 1}}
+        this.x = moveDirection[direction]["x"] % gridSize
+        this.y = moveDirection[direction]["y"] % gridSize
         console.log("zombie " + this.name + " moved to " + "(" + this.x + "," + this.y + ")");
     }
 
