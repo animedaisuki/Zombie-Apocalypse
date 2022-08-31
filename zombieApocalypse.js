@@ -177,9 +177,3 @@ function readInput(input) {
 }
 
 readInput(input);
-
-
-
-
-
-
