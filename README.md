@@ -33,9 +33,9 @@ node zombieApocalypse.js
 The input is given as a JSON object containing:
 
 - `gridSize`: The size of the grid world.
-zombie: The initial position of the first zombie.
-creatures: An array of creature positions.
-commands: A string of movement commands for the zombie(s).
+- `zombie`: The initial position of the first zombie.
+- `creatures`: An array of creature positions.
+- `commands`: A string of movement commands for the zombie(s).
 
 # **Output**
 The output will be displayed in the console, showing the positions of zombies and remaining creatures.
