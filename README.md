@@ -32,7 +32,7 @@ node zombieApocalypse.js
 # **Example Input**
 The input is given as a JSON object containing:
 
-gridSize: The size of the grid world.
+- `gridSize`: The size of the grid world.
 zombie: The initial position of the first zombie.
 creatures: An array of creature positions.
 commands: A string of movement commands for the zombie(s).
