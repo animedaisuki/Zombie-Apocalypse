@@ -1,4 +1,3 @@
-# Zombie-Apocalypse
 # **Overview**
 This JavaScript program simulates a zombie apocalypse on a 2D grid. Initially, the grid contains some creatures and a single zombie. The zombie moves based on a series of commands (Left, Right, Up, Down) and infects any creature it encounters. Once a creature is infected, it becomes a new zombie and begins to move in the same pattern as the initial zombie. The simulation outputs the positions of all remaining creatures and zombies at the end.
 
@@ -24,29 +23,21 @@ Clone the repository.
 Open the JavaScript file in your text editor or IDE.
 
 To run the simulation, you can either:
-
-Copy the code into the developer console of a web browser and run it.
 Use Node.js to execute the file in a terminal.
-bash
-Copy code
-node zombieApocalypse.js
-Example Input
+
+```bash
+node zombieApocalypse.js```
+
+# **Example Input**
 The input is given as a JSON object containing:
 
 gridSize: The size of the grid world.
 zombie: The initial position of the first zombie.
 creatures: An array of creature positions.
 commands: A string of movement commands for the zombie(s).
-json
-Copy code
-{
-  "gridSize": 4,
-  "zombie": {"x": 3, "y": 1},
-  "creatures": [{"x":0, "y":1},{"x":1, "y":2},{"x":1, "y":1}],
-  "commands": "RDRU"
-}
-Output
+
+# **Output**
 The output will be displayed in the console, showing the positions of zombies and remaining creatures.
 
-License
+# **License**
 MIT
