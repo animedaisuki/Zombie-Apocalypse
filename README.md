@@ -26,7 +26,8 @@ To run the simulation, you can either:
 Use Node.js to execute the file in a terminal.
 
 ```bash
-node zombieApocalypse.js```
+node zombieApocalypse.js
+```
 
 # **Example Input**
 The input is given as a JSON object containing:
