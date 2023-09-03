@@ -2,19 +2,19 @@
 This JavaScript program simulates a zombie apocalypse on a 2D grid. Initially, the grid contains some creatures and a single zombie. The zombie moves based on a series of commands (Left, Right, Up, Down) and infects any creature it encounters. Once a creature is infected, it becomes a new zombie and begins to move in the same pattern as the initial zombie. The simulation outputs the positions of all remaining creatures and zombies at the end.
 
 # **Classes**
-- World
+- `World`
 Manages the grid world on which the creatures and zombies exist.
-- Zombie
+- `Zombie`
 Keeps track of the zombie's current position.
 Executes moves based on given commands.
-- Creature
+- `Creature`
 Keeps track of the creature's current position.
 Can be infected by a zombie, converting it into a new zombie.
 
 # **Functions**
-- checkCollision
+- `checkCollision`
 Checks if a zombie has collided with any creature based on their coordinates.
-- readInput
+- `readInput`
 Reads the input JSON, initializes creatures and zombies, and then runs the simulation.
 
 # **Getting Started**
