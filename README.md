@@ -5,9 +5,9 @@ This JavaScript program simulates a zombie apocalypse on a 2D grid. Initially, t
 - `World`
 Manages the grid world on which the creatures and zombies exist.
 - `Zombie`
-Keeps track of the zombie's current position.
+--Keeps track of the zombie's current position.
 Executes moves based on given commands.
-- `Creature`
+-- `Creature`
 Keeps track of the creature's current position.
 Can be infected by a zombie, converting it into a new zombie.
 
